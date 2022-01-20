@@ -7,4 +7,4 @@ layout: home
 export_on_save:
   html: true
 ---
-Tema: minimal. 
+Tema: minima 
