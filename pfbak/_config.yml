@@ -28,8 +28,8 @@ url: "https://hendrikdcomp.github.io" # the base hostname & protocol for your si
 github_username:  hendrikdcomp
 
 # Build settings
-theme: minima
-# remote-theme: jarrekk/Jalpc
+# theme: minima
+remote-theme: jarrekk/Jalpc
 plugins:
   - jekyll-feed
 
