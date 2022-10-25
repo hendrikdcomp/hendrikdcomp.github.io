@@ -64,9 +64,12 @@ const sum = (list) => list.reduce((acc,x)=>acc+x,0)
  * Elas precisam ter o mesmo comprimento e, obviamente,
  * os mesmos elementos.
  */
-const equals = (list1, list2) =>
-  list1.length === list2.length &&
-  list1.every((value, i) => value === list2[i]);
+const equals = (item1, item2) => {
+  if (item1.constructor === Array && item2.constructor === Array) {
+    return item1.length === item2.length &&
+    item1.every((value, i) => equals(value,item2[i]))
+  } else return item1 === item2
+} 
 
 /**
  * indef()

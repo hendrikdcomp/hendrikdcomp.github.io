@@ -1,3 +1,6 @@
+/* *******************************************************
+BIBLIOTECA PARA CASOS DE TESTE: NÃO ALTERAR ESTE TRECHO 
+*********************************************************/
 const CHECK = '\u2705'
 const FAIL = '\u274C'
 const UNABLE = '\u2753'
@@ -11,7 +14,7 @@ const log = (msg) => console.log(msg)
  */
 const assert = (result,value,f='') => {
     try {
-        if (result === value) return log(`${f} ${CHECK}`)
+        if (equals(result,value)) return log(`${f} ${CHECK}`)
         else return log(`${f} ${FAIL}`)
     } catch(err) {
         log(`${f} ${UNABLE} ${err}`)
